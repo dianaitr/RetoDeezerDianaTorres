@@ -40,7 +40,7 @@ public class SongActivity extends AppCompatActivity {
         btn_return.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(SongActivity.this, MainActivity.class);
+                Intent i = new Intent(SongActivity.this, PlaylistActivity.class);
                 startActivity(i);
                 finish();
             }
