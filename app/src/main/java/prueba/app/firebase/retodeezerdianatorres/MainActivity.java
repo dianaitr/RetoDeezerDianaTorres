@@ -27,7 +27,15 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    String applicationID = "349364" ;
+    public String getApplicationID() {
+        return applicationID;
+    }
+
+    public void setApplicationID(String applicationID) {
+        this.applicationID = applicationID;
+    }
+
+    private String applicationID = "349364" ;
     AdapterPlaylist adapterPlaylist;
     ListView lvPlaylist;
     EditText txtListSearched;
@@ -75,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (txtListSearched!=null && !txtListSearched.getText().toString().equals("")) {
                     request = DeezerRequestFactory.requestSearchPlaylists(txtListSearched.getText().toString());
-                    request.setId("Playlists request");
+                    request.setId("PlaylistsReq");
                     deezerConnect.requestAsync(request, listener);
                 } else {
                     Toast.makeText(getApplicationContext(), "Debe ingresar información en la busqueda", Toast.LENGTH_SHORT).show();
