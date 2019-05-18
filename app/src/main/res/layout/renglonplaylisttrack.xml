@@ -19,24 +19,24 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre lista"
+            android:text="Nombre canción"
             android:textSize="14dp"
             android:textColor="#000"
-            android:id="@+id/name_playlist"/>
+            android:id="@+id/txtname_track"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre del usuario creador"
+            android:text="Artista canción"
             android:textSize="14dp"
             android:textColor="#000"
-            android:id="@+id/name_creator"/>
+            android:id="@+id/txtname_artist"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Numero de items"
+            android:text="Año lanzamiento"
             android:textSize="14dp"
             android:textColor="#000"
-            android:id="@+id/numbers_items"/>
+            android:id="@+id/txtdate"/>
     </LinearLayout>
 
 </LinearLayout>

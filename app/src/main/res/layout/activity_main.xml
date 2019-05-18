@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="20dp"
-        android:background="	#6495ED"
+        android:background="#AA00AA00"
         android:paddingLeft="10dp"
 
         android:paddingTop="20dp"
@@ -27,8 +27,8 @@
             android:hint="Buscar una lista de reproducción" />
         <ImageButton
             android:id="@+id/btn_search"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/lupa"/>
 
     </LinearLayout>

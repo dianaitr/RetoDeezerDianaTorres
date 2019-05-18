@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".PlaylistActivity">
 
-</android.support.constraint.ConstraintLayout>
+<LinearLayout
+    android:id="@+id/banner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#aa00aa00">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_return"
+        android:background="@drawable/ic_return"
+   />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Buscar Playlist"
+        android:textSize="18dp"
+        android:textColor="#fff"/>
+
+</LinearLayout>
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/image_playlist"
+    android:layout_below="@+id/banner"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Nombre de la playlist"
+    android:id="@+id/txtplaylistName"
+    android:layout_below="@+id/image_playlist"
+    android:textSize="24dp"
+    android:textStyle="bold"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtDescription"
+    android:layout_below="@+id/txtplaylistName"
+    android:text="Descripción playlist..."/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtInfoPlaylist"
+    android:layout_below="@+id/txtDescription"
+    android:text="(# canciones) (# fans)"
+    android:padding="10dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInfoPlaylist"
+        android:id="@+id/lv_infoplaylists">
+    </ListView>
+
+
+</RelativeLayout>
