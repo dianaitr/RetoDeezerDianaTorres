@@ -16,8 +16,8 @@
         android:background="	#6495ED"
         android:paddingLeft="10dp"
 
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp">
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
 
         <EditText
             android:id="@+id/txtListSearched"
@@ -26,6 +26,7 @@
             android:background="#ffff"
             android:hint="Buscar una lista de reproducción" />
         <ImageButton
+            android:id="@+id/btn_search"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/lupa"/>
